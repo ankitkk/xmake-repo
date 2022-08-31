@@ -14,7 +14,7 @@ package("xsimd")
     if is_plat("windows") then
         add_cxxflags("/arch:AVX2")
     else
-        add_cxxflags("-march=native")
+        add_cxxflags("-march=core-avx2")
     end
 
     add_deps("cmake")
